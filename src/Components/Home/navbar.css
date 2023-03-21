@@ -1,0 +1,128 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  /* background-color: #fff; */
+  background-color: #7188ff;
+  background: rgb(253, 252, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(253, 252, 255, 1) 24%,
+    rgb(114, 177, 236) 30%,
+    rgba(104, 59, 255, 1) 100%
+  );
+  justify-content: flex-end;
+  z-index: 99910;
+}
+.nav-items {
+  align-self: flex-end;
+  justify-self: flex-end;
+  display: flex;
+  list-style: none;
+  position: relative;
+  right: 5%;
+}
+.nav-items > li {
+  padding: 4px 30px 4px 30px;
+  margin: 2px;
+}
+.nav-items > li:hover {
+  padding: 4px 30px 4px 30px;
+  margin: 1px;
+}
+.hamburger,
+.close-button {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5px;
+    /* position: relative;
+    right: 10px; */
+
+    z-index: 99999;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    position: relative;
+    top: -35px;
+    /* background-color: #fff; */
+    justify-content: flex-end;
+    z-index: 99910;
+    /* background-color: red; */
+  }
+  .navbar-mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    position: absolute;
+    top: 45px;
+    /* background-color: #fff; */
+    background-color: #7188ff;
+    justify-content: flex-end;
+    z-index: 99910;
+    transition: 1.5s;
+  }
+  .close-button {
+    display: flex;
+    align-self: flex-end;
+    /* justify-self: flex-start; */
+    position: relative;
+    background-color: transparent;
+    top: -50px;
+    right: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+
+    display: none;
+    /* visibility: hidden; */
+  }
+  .nav-items-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* position: absolute;
+    top: -10px; */
+
+    list-style: none;
+    z-index: 99;
+    width: 120%;
+    padding: 10px;
+    margin: 0px;
+
+    /* From https://css.glass */
+    z-index: 20;
+    /* background: rgba(255, 255, 255); */
+  }
+  .nav-items-mobile > li {
+    /* padding: 4px 30px 4px 30px;
+    margin: 30px; */
+    margin: 4px;
+    padding: 2px;
+  }
+  #nav-buttons {
+    position: relative;
+    width: 40px;
+    margin: 2px;
+    border-radius: 5px;
+    /* background-color: rgb(255, 255, 255); */
+    height: 10px;
+  }
+}

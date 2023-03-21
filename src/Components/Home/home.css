@@ -1,0 +1,106 @@
+.container {
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 115vh;
+  background-color: white;
+  background-image: url("../../Sources/Vector.png");
+  background-size: cover;
+  background-position: 35%;
+  /* padding:20px; */
+  padding-left: 0px;
+  width: 100%;
+  margin: 0;
+  border-bottom: 2px rgb(202, 198, 198) solid;
+
+  /* background-color: red; */
+}
+
+#for {
+  display: none;
+}
+.betime {
+  align-self: center;
+  justify-self: flex-start;
+  position: relative;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.image-container {
+  width: fit-content;
+  display: flex;
+  margin-left: 5px;
+}
+.iamge-mobile {
+  width: 264px;
+  height: 500px;
+  align-self: center;
+}
+.image-container-text {
+  align-self: center;
+  padding: 20px;
+  position: relative;
+  left: 10%;
+}
+.image-container-bottom-text {
+  align-self: flex-end;
+  position: relative;
+  bottom: 35%;
+  right: 30%;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: green; */
+  }
+
+  #for {
+    display: block;
+    background-color: #7188ff;
+    border-radius: 5px;
+  }
+  .betime {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 5px;
+    left: 20px;
+    /* background-color: #e95656; */
+    flex-direction: column;
+  }
+  .image-container {
+    /* background-color: greenyellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .iamge-mobile {
+    width: 170px;
+    height: 350px;
+    align-self: flex-end;
+    padding: 10px;
+    overflow: hidden;
+  }
+  .image-container-text {
+    width: 50%;
+    font-size: 16px;
+    text-align: center;
+    /* margin-top: 20px; */
+    position: relative;
+    left: -10px;
+    /* left: 160px; */
+    /* background-color: #e43131; */
+  }
+  .image-container-bottom-text {
+    /* background-color: bisque; */
+    text-align: center;
+    margin-top: 20px;
+  }
+}
